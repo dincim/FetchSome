@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class HomePage {
 	
 
-	WebDriver driver = new ChromeDriver();
+	WebDriver driver;
 	@BeforeTest
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", 
