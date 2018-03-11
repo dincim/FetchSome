@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 
 public class HomePage {
 	
-
 	WebDriver driver;
+	
 	@BeforeTest
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", 
@@ -23,6 +23,9 @@ public class HomePage {
 	public void loginTest() {
 		
 		driver.findElement(By.className("auth0-lock-input")).sendKeys("murat.dinc@fairbit.com");
+		driver.findElement(By.id("")).sendKeys("");
+		driver.findElement(By.id("")).click();
+		
 		
 	}
 		
